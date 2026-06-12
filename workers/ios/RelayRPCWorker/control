@@ -1,0 +1,9 @@
+Package: com.relayrpc.worker
+Name: RelayRPC Worker
+Version: 0.1.0
+Architecture: iphoneos-arm64
+Description: RelayRPC Worker tweak - connects to RelayRPC server via WebSocket to receive and execute tasks.
+Maintainer: RelayRPC
+Author: RelayRPC
+Depends: mobilesubstrate, preferenceloader
+Section: Tweaks

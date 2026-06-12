@@ -1,0 +1,26 @@
+server:
+  listen_addr: ":8080"
+  read_timeout: "15s"
+  write_timeout: "180s"
+  shutdown_grace_period: "30s"
+
+scheduler:
+  worker_cooldown: "1m"
+  task_run_timeout: "120s"
+  task_ack_timeout: "3s"
+  heartbeat_interval: "10s"
+  heartbeat_timeout: "30s"
+  poll_interval: "50ms"
+  default_task_timeout: "120s"
+  default_task_deadline: "10m"
+
+log:
+  level: "info"
+
+# Bearer tokens accepted by the server. A token is NOT role-specific: any
+# valid token works both for submitting tasks (POST /api/v1/tasks) and for
+# connecting as a worker (worker WebSocket). For workers, the token doubles
+# as the worker's identity. Generate opaque, high-entropy values per client.
+#
+# Fill in real tokens before running. Do NOT commit real tokens.
+tokens:

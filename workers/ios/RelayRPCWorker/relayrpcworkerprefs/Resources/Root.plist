@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Connect to RelayRPC server as a Worker.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.relayrpc.worker</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>PostNotification</key>
+			<string>com.relayrpc.worker/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>ws://192.168.1.16:8080/api/v1/workers/ws</string>
+			<key>defaults</key>
+			<string>com.relayrpc.worker</string>
+			<key>key</key>
+			<string>serverURL</string>
+			<key>label</key>
+			<string>Server</string>
+			<key>placeholder</key>
+			<string>ws://host:port/api/v1/workers/ws</string>
+			<key>PostNotification</key>
+			<string>com.relayrpc.worker/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.relayrpc.worker</string>
+			<key>key</key>
+			<string>token</string>
+			<key>label</key>
+			<string>Token</string>
+			<key>placeholder</key>
+			<string>uuid</string>
+			<key>PostNotification</key>
+			<string>com.relayrpc.worker/prefsChanged</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>RelayRPC Worker</string>
+</dict>
+</plist>

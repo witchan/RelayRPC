@@ -1,0 +1,28 @@
+# Build artifacts
+*.db
+*.deb
+.theos/
+packages/
+obj/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI development docs (not part of the project)
+specs/
+prompts/
+artifacts/
+tests/
+CODEX_START_HERE.md
+IMPLEMENTATION_PLAN.md
+PACKAGE_CHANGELOG.md
+PROJECT_IDENTITY.md
+PROJECT_TREE.md
+QUICK_HANDOFF_TO_CODEX.md
+SOURCE_OF_TRUTH.md
